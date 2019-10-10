@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603691554239",
+    "firebase_url": "https://promoapp-d4dc0.firebaseio.com",
+    "project_id": "promoapp-d4dc0",
+    "storage_bucket": "promoapp-d4dc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603691554239:android:899d6e88251cf42d1f3d0a",
+        "android_client_info": {
+          "package_name": "com.example.promoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603691554239-04srcn7f4frfj04jj89g9nc5q8ro3tmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.promoapp",
+            "certificate_hash": "181ec61b96980384e11dc623087897eafb0dfc05"
+          }
+        },
+        {
+          "client_id": "603691554239-chiv167f05m8ktfh9ndgh72e1s6q8c7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMonUacEmlfH7WwvSGuxD9PaDsfmivMuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603691554239-chiv167f05m8ktfh9ndgh72e1s6q8c7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

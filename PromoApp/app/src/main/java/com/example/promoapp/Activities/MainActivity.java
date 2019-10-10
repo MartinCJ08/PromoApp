@@ -1,8 +1,10 @@
-package com.example.promoapp;
+package com.example.promoapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.promoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
