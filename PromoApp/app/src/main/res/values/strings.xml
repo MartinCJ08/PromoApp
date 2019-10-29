@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PromoApp</string>
     <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="sign_up">Sign up</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
 </resources>

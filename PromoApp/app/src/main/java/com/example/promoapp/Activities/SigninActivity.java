@@ -26,6 +26,7 @@ public class SigninActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     TextView input_email,input_password;
     Intent inMain;
+    Intent inSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +98,11 @@ public class SigninActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    public void goToSignup(View v){
+        inSignup = new Intent(SigninActivity.this, SignupActivity.class);
+        startActivity(inSignup);
     }
 
     private void updateUI(FirebaseUser currentUser) {
