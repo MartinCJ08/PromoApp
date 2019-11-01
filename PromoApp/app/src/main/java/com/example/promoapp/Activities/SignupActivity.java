@@ -1,5 +1,7 @@
 package com.example.promoapp.Activities;
 
+import android.graphics.drawable.AnimationDrawable;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.cardview.widget.CardView;
 import com.example.promoapp.Models.Usuario;
 import com.example.promoapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,13 +29,23 @@ public class SignupActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("usuarios");
 
-    private Button btnSignReg;
+    private CardView btnSignReg;
     private EditText etxtEmailSign, etxtPassSign, etxtPassSign2, etxtNomSign, etxtApeSign, etxtPhoneSign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try
+        {
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
         setContentView(R.layout.activity_sign_up);
+        LinearLayout l = (LinearLayout) findViewById(R.id.signup_view);
+        AnimationDrawable animationDrawable = (AnimationDrawable) l.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
 
         btnSignReg = findViewById(R.id.btnSignReg);
         etxtPassSign = findViewById(R.id.etxtPassSign);
