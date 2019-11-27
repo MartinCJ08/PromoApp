@@ -3,8 +3,10 @@ package com.example.promoapp.Activities;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.util.Log;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity  {
     BottomNavigationView nav;
     private CameraFragment cameraFragment;
     Intent inArFragment;
-
+    static final int SAVE_PROMO_CODE = 420;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,15 +46,21 @@ public class MainActivity extends AppCompatActivity  {
             switch (menuItem.getItemId()){
                 case R.id.configItem:
                     selectedFragment = new SettingsFragment();
-                    break;
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    return true;
+//                    break;
                 case R.id.homeItem:
                     selectedFragment = new HomeFragment();
-                    break;
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    return true;
+//                    break;
                 case R.id.cameraItem:
                     hasPermissionAndOpenCamera();
-                    startActivity(inArFragment);
+                    startActivityForResult(inArFragment,SAVE_PROMO_CODE);
+//                    startActivity(inArFragment);
+                    return true;
 //                    selectedFragment = cameraFragment;
-                    break;
+//                    break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;
@@ -77,4 +85,13 @@ public class MainActivity extends AppCompatActivity  {
         ActivityCompat.requestPermissions(this, permissions, PackageManager.PERMISSION_GRANTED);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == SAVE_PROMO_CODE){
+            if(resultCode == RESULT_OK){
+                Log.wtf("wtf","Se armo");
+            }
+        }
+    }
 }

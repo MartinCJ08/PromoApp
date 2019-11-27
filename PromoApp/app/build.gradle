@@ -51,3 +51,20 @@ sceneform.asset('sampledata/arctic/ArcticFox_Posed.obj',
         'default',
         'sampledata/arctic/ArcticFox_Posed.sfa',
         'src/main/assets/ArcticFox_Posed')
+
+
+sceneform.asset('sampledata/pizza/Pizza_Slice_01.obj',
+        'default',
+        'sampledata/pizza/Pizza_Slice_01.sfa',
+        'src/main/assets/Pizza_Slice_01')
+
+
+sceneform.asset('sampledata/caffenio/caffenio.obj',
+        'default',
+        'sampledata/caffenio/caffenio.sfa',
+        'src/main/assets/caffenio')
+
+sceneform.asset('sampledata/xiaomi/xiaomi.obj',
+        'default',
+        'sampledata/xiaomi/xiaomi.sfa',
+        'src/main/assets/xiaomi')
