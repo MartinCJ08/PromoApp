@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         inArFragment = new Intent(this, ArActivity.class);
         list = new ArrayList<>();
+
         nav = findViewById(R.id.bottom_navigation);
         nav.setOnNavigationItemSelectedListener(navListener);
         nav.getMenu().findItem(R.id.homeItem).setChecked(true);

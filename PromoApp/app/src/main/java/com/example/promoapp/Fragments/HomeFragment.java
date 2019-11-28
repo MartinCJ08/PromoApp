@@ -38,16 +38,16 @@ public class HomeFragment extends Fragment {
         for(int i=0; i< MainActivity.list.size();i++){
             switch(MainActivity.list.get(i)){
                 case "dominos":
-                    listItems.add(new Item(0,"DOMINOS","Una pizza gratis todos los dias","Hasta agotar existencias"));
+                    listItems.add(new Item(R.drawable.domino,"DOMINOS","Una pizza gratis todos los dias","Hasta agotar existencias"));
                     break;
                 case "fox":
-                    listItems.add(new Item(0,"ARTICFOX","Todos los colores a mitad de precion","Hasta agotar existencias"));
+                    listItems.add(new Item(R.drawable.fox,"ARTICFOX","Todos los colores a mitad de precion","Hasta agotar existencias"));
                     break;
                 case "cafennio":
-                    listItems.add(new Item(0,"CAFFENIO","Refill gratis en la compra de cualquier cafe","Hasta agotar existencias"));
+                    listItems.add(new Item(R.drawable.caffenio,"CAFFENIO","Refill gratis en la compra de cualquier cafe","Hasta agotar existencias"));
                     break;
                 case "xiaomi":
-                    listItems.add(new Item(0,"XIAOMI","Un corta unas gratis en la compra de cualquier otro producto de MI","Hasta agotar existencias"));
+                    listItems.add(new Item(R.drawable.xiaomi,"XIAOMI","Un corta unas gratis en la compra de cualquier otro producto de MI","Hasta agotar existencias"));
                     break;
             }
         }
