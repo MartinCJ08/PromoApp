@@ -14,13 +14,5 @@
         android:name="com.example.promoapp.Fragments.MyArFragment"
         android:id="@+id/my_ar_fragment"></fragment>
 
-    <Button
-        android:id="@+id/btnSavePromo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="onSaveData"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:text="SAVE PROMO" />
 
 </LinearLayout>

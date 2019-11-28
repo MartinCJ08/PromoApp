@@ -113,7 +113,7 @@ public class ArActivity extends AppCompatActivity {
         augmentedImageDatabase = new AugmentedImageDatabase(session);
         augmentedImageDatabase.addImage("fox", bmFox);
         augmentedImageDatabase.addImage("domino", bmDomino);
-        augmentedImageDatabase.addImage("caffenio", bmCaffenio);
+//        augmentedImageDatabase.addImage("caffenio", bmCaffenio);
 //        augmentedImageDatabase.addImage("xiaomi", bmXiaomi);
         config.setAugmentedImageDatabase(augmentedImageDatabase);
         return true;
