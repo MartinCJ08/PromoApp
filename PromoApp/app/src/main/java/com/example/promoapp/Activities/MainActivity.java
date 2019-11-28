@@ -13,6 +13,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import com.example.promoapp.Fragments.HomeFragment;
+import com.example.promoapp.Item;
 import com.example.promoapp.R;
 import com.example.promoapp.Fragments.SettingsFragment;
 import com.github.florent37.camerafragment.CameraFragment;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inArFragment = new Intent(this, ArActivity.class);
-
+        list = new ArrayList<>();
         nav = findViewById(R.id.bottom_navigation);
         nav.setOnNavigationItemSelectedListener(navListener);
         nav.getMenu().findItem(R.id.homeItem).setChecked(true);
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == SAVE_PROMO_CODE){
             if(resultCode == RESULT_OK){
-                Log.wtf("wtf","Se armo");
+                list.add(data.getStringExtra("PROMO"));
             }
         }
     }
