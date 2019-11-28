@@ -19,8 +19,11 @@ import com.github.florent37.camerafragment.CameraFragment;
 import com.github.florent37.camerafragment.configuration.Configuration;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity  {
+    public static ArrayList<String> list;
     BottomNavigationView nav;
     private CameraFragment cameraFragment;
     Intent inArFragment;
