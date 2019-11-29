@@ -42,6 +42,7 @@ dependencies {
     // implementation 'com.google.ar:core:1.13.0'
     // Provides ArFragment, and other UX resources.
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.13.0'
+    implementation 'com.synnapps:carouselview:0.1.4'
 
 }
 
